@@ -21,6 +21,10 @@
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
       crossorigin="anonymous"
     ></script>
+    <script
+      defer
+      src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"
+    ></script>
   </head>
   <body style="font-family: 'Nunito Sans', sans-serif">
     <div
@@ -74,6 +78,7 @@
             <th scope="col">Full URL</th>
             <th scope="col">Short URL</th>
             <th scope="col">Clicks Count</th>
+            <th scope="col">Delete URL</th>
           </tr>
         </thead>
         <tbody>
@@ -87,6 +92,14 @@
               <a href="<%= data.shortUrl %>"><%= data.shortUrl %></a>
             </td>
             <td><%= data.clicks %></td>
+            <td>
+              <a href="/delete/<%= data._id%>"
+                ><ion-icon
+                  style="font-size: 24px; color: black"
+                  name="trash-sharp"
+                ></ion-icon
+              ></a>
+            </td>
           </tr>
           <% }) %>
         </tbody>
