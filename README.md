@@ -6,3 +6,6 @@ A simple node.js based URL shortener
 2. EJS
 3. MongoDB
 4. Express
+
+## Live Demo
+URL:- https://shortmeapp.herokuapp.com/
