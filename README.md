@@ -1,5 +1,5 @@
 # ShortMe
-A simple node.js based URL shortener
+A simple, fast node.js based URL shortener
 
 ## Tech Stack
 1. Node.js
